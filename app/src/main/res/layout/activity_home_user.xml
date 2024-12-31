@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeUserActivity">
+
+    <!-- Login Title -->
+    <TextView
+        android:id="@+id/login_title_hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_user_login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Phone EditText -->
+    <EditText
+        android:id="@+id/login_ph_hm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title_hm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:hint="@string/phone_number_hm"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/login_password_hm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ph_hm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:hint="@string/password_dp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login_button_hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password_hm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_btn_dp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Register TextView -->
+    <TextView
+        android:id="@+id/login_register_hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button_hm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_link_dp"
+        android:textColor="#0277BD" />
+</RelativeLayout>

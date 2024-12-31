@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_type"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Delivery Person Button -->
+    <Button
+        android:id="@+id/button_delivery_person"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/delivery_person"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:background="@drawable/custom_bkg"
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Home User Button -->
+    <Button
+        android:id="@+id/button_home_user"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/home_user"
+        android:layout_below="@id/button_delivery_person"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:background="@drawable/custom_bkg"
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

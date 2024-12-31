@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryPersonRegisterActivity">
+
+    <!-- Registration Title -->
+    <TextView
+        android:id="@+id/register_title_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_person_register"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/register_name_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_title_reg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/register_phone_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_name_reg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/register_password_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_phone_reg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/button_register_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/register_btn"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Login link -->
+    <TextView
+        android:id="@+id/register_login_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_link"
+        android:layout_below="@+id/button_register_reg"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

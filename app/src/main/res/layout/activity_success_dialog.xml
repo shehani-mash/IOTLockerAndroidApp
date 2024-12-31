@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/successLayout"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutDialog"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_bkg">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/AcceptImage"
+            android:src="@drawable/baseline_check_circle_24"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/successTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="28dp"
+            android:text="@string/accept_dialog"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/AcceptImage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AcceptDes"
+            android:text="@string/phone_number_didial"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/successTitle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/AcceptDes">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/AcceptDone"
+                android:text="@string/accept_btn"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/Iris"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/CancelBtn"
+                android:text="@string/cancle_dia"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/Iris"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
